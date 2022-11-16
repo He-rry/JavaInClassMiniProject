@@ -7,13 +7,16 @@ public class Games {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Random rm = new Random();
+        //this is boolean for program loop
         boolean status = true;
+        // this is data to show အဖြေဘယ်နှစ်ခါ နဲ့ မှန်
         int count = 0;
         int hiddenNumber = rm.nextInt(50);
         System.out.println("Guess the number between 1 to 50 ");
         while (status) {
             System.out.print("Enter  your number :");
             int userInput = sc.nextInt();
+            //algorithm of game
             if (userInput != hiddenNumber) {
                 if (count == 2) {
                     System.out.println();
